@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000, #ff0000); /* Black to Red Gradient */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center; /* Center align text */
+    font-size: 35px; /* Set font size to 35 pixels */
+    margin: 20px 0; /* Add margin to the heading */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+h3 {
+    margin-top: 15px; /* Reduced margin */
+    font-size: 22px; /* Set font size */
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with slight transparency */
+    padding: 20px; /* Padding for form */
+    border-radius: 10px; /* Border radius for form */
+    animation: fadeInUp 1s ease-in-out;
+    margin: 0 auto; /* Center form horizontally */
+    max-width: 400px; /* Set a maximum width for the form */
+    width: 100%;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px; /* Padding for input */
+    margin-bottom: 20px; /* Margin for input */
+    border: none;
+    border-radius: 5px; /* Border radius for input */
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    font-size: 14px; /* Font size for input */
+    color: #fff; /* White text color */
+    transition: background 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.5); /* Slightly more opaque */
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Padding for button */
+    border: none;
+    border-radius: 5px; /* Border radius for button */
+    background-color: #ff0000; /* Bright red */
+    color: #fff;
+    font-size: 16px; /* Font size for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000; /* Darker red */
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

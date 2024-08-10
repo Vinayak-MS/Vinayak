@@ -1,0 +1,69 @@
+/* update.css */
+body {
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #ff0000); /* Black to Red Gradient */
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styles */
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #333; /* Dark border for contrast */
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    color: #fff; /* White text color */
+}
+
+/* Button styles */
+button {
+    background-color: #ff0000; /* Bright red */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red */
+    transform: translateY(-2px);
+}
+
+/* Message container styles */
+.message {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error-message {
+    color: #ff0000; /* Bright red for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}

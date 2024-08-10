@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Adminn.css">
+    <title>Admin Panel</title>
+    <style>
+        /* Add some styling for the Results button */
+        .results-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .results-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+    <script>
+        // Function to display a popup message if there's a message in the URL
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            if (message) {
+                alert(decodeURIComponent(message));
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- Results button in the top right corner -->
+    <button class="results-button" onclick="location.href='ResultsServlet'">Results</button>
+
+    <h2>Admin Panel</h2>
+    <form action="AdminServlet" method="post">
+        <h3>Add Candidate</h3>
+        Candidate Name: <input type="text" name="candidateName"><br>
+        <button type="submit" name="action" value="addCandidate">Add Candidate</button><br><br>
+        
+        <h3>Remove Candidate</h3>
+        Candidate Name: <input type="text" name="candidatename"><br>
+        <button type="submit" name="action" value="removeCandidate">Remove Candidate</button><br><br>
+        
+        <h3>Add Voter</h3>
+        Voter Username: <input type="text" name="voterName"><br>
+        Voter Password: <input type="text" name="voterPassword"><br>
+        <button type="submit" name="action" value="addVoter">Add Voter</button><br><br>
+        
+        <h3>Remove Voter</h3>
+        Voter UserName: <input type="text" name="votername"><br>
+        <button type="submit" name="action" value="removeVoter">Remove Voter</button>
+    </form>
+
+    <!-- Display message -->
+</body>
+</html>

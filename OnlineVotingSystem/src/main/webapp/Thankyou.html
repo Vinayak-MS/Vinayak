@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f3a683, #f7b731);
+            font-family: Arial, sans-serif;
+        }
+
+        .thank-you {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            animation: fadeInOut 3s ease-in-out, pulse 2s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: #fff;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #f7b731;
+            }
+            100% {
+                transform: scale(1);
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">Thank You For Voting</div>
+</body>
+</html>

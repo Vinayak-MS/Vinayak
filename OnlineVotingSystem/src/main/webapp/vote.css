@@ -1,0 +1,55 @@
+/* vote.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+strong {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f00; /* Red color */
+}
+
+input[type='radio'] {
+    margin: 10px 0;
+    accent-color: #f00; /* Red color for radio buttons */
+}
+
+input[type='submit'] {
+    background-color: #f00; /* Red color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type='submit']:hover {
+    background-color: #c00; /* Darker red for hover effect */
+}
+
+.message {
+    color: #f00; /* Red color for messages */
+    font-size: 14px;
+    margin-top: 15px;
+}
